@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="黄彦松的个人网站：数据工程、湖仓一体、ETL、SQL 优化与 AI 数据应用作品集。"
+    />
+    <title>黄彦松 | Data Engineer & AI Builder</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="返回顶部">
+        <span class="brand-mark">YS</span>
+        <span>
+          <strong>黄彦松</strong>
+          <small>Data Portfolio</small>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#experience">实习</a>
+        <a href="#projects">项目</a>
+        <a href="#skills">技术栈</a>
+        <a href="#timeline">轨迹</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="切换亮暗主题">
+        <span class="theme-icon">◐</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section-dark">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Data Engineer · AI Builder · Information Systems</p>
+          <h1>把复杂业务问题，转化为稳定可用的数据系统。</h1>
+          <p class="hero-copy">
+            我是黄彦松，华中师范大学信息管理与信息系统本科生，已推免至华中科技大学图书情报硕士。
+            关注湖仓一体、ETL 开发、SQL 性能优化与 AI 数据应用，擅长把业务需求拆解为数据模型、
+            调度流程和可落地的产品能力。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">查看作品</a>
+            <a class="button ghost" href="./assets/huang-yansong-resume.pdf" download>下载简历</a>
+            <a class="button ghost" href="https://github.com/ysdatasci" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="核心数据成果">
+          <div class="panel-topline">
+            <span>Impact Snapshot</span>
+            <span class="live-dot"></span>
+          </div>
+          <div class="metric-grid">
+            <article>
+              <strong>30s → ms</strong>
+              <span>合同账单预警查询优化</span>
+            </article>
+            <article>
+              <strong>10+</strong>
+              <span>Airflow DAG 开发与迁移</span>
+            </article>
+            <article>
+              <strong>42,870+</strong>
+              <span>AI 人才需求多源数据分析</span>
+            </article>
+            <article>
+              <strong>90%</strong>
+              <span>接口批量插入提速</span>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+      <section class="intro wrap reveal">
+        <div>
+          <p class="section-kicker">Profile</p>
+          <h2>工程能力、业务理解和研究型数据分析的交叉点。</h2>
+        </div>
+        <div class="intro-text">
+          <p>
+            我的经历从信息系统开发、数据挖掘和自然语言处理课程延伸到企业数据中台实习，
+            既写过面向业务的 ETL 与接口，也做过台风舆情、AI 人才供需、社区养老等数据研究。
+          </p>
+          <p>
+            我喜欢把“问题现场”翻译成清晰的数据结构：先理解业务约束，再设计指标口径、模型分层、
+            调度链路和交付方式，让数据真正进入决策和产品。
+          </p>
+        </div>
+      </section>
+
+      <section class="section-band" id="experience">
+        <div class="wrap">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Internship</p>
+            <h2>华大博思（武汉）｜数据开发实习生</h2>
+            <p>
+              参与湖仓一体数据中台建设，聚焦资产、合同等核心业务，负责 ETL 开发、
+              DAG 调度编排、数据模型优化及接口配置。
+            </p>
+          </div>
+          <div class="experience-layout">
+            <article class="impact-card reveal">
+              <span class="card-label">SQL Performance</span>
+              <h3>合同账单 3 天到期预警性能重构</h3>
+              <p>
+                针对 FIFO 资金池核算需求，采用索引范围扫描与相关子查询快照策略，
+                将查询响应从 30 秒优化至毫秒级，并新增合同状态过滤逻辑，提升财务催收准确性。
+              </p>
+              <div class="progress-line" aria-hidden="true">
+                <span style="--value: 92%"></span>
+              </div>
+            </article>
+            <div class="impact-list">
+              <article class="mini-card reveal">
+                <strong>10+ DAG</strong>
+                <span>资产租赁、经营数据等核心 DAG 开发与迁移，修复时区差异问题，提升自动化调度稳定性。</span>
+              </article>
+              <article class="mini-card reveal">
+                <strong>20+ 运维需求</strong>
+                <span>完成资产信息变更、权限配置、菜单字段优化、欠款提醒、出租率/闲置率计算等任务。</span>
+              </article>
+              <article class="mini-card reveal">
+                <strong>90% 提速</strong>
+                <span>参与东风李尔接口平台建设，编写 ETL 脚本与 API 接口，优化经营性资产合同批量写入。</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap" id="projects">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Projects</p>
+          <h2>精选项目与研究经历</h2>
+          <p>用真实数据、业务场景和产品原型展示“从问题到交付”的能力。</p>
+        </div>
+
+        <div class="project-filter reveal" aria-label="项目筛选">
+          <button class="chip active" type="button" data-filter="all">全部</button>
+          <button class="chip" type="button" data-filter="data">数据分析</button>
+          <button class="chip" type="button" data-filter="ai">AI 应用</button>
+          <button class="chip" type="button" data-filter="system">系统开发</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured reveal" data-category="ai data">
+            <div class="project-index">01</div>
+            <p class="card-label">Knowledge Graph · Talent Analytics</p>
+            <h3>AI 人才培养路径优化方案</h3>
+            <p>
+              爬取 BOSS 直聘 19,021 条招聘数据、企查查 20,000 条企业数据和慕课 3,849 条课程数据，
+              构建“岗位-技能”“专业-课程-技能”知识图谱，提出社会、企业、高校、个人四方共育方案。
+            </p>
+            <div class="tags">
+              <span>Python</span><span>知识图谱</span><span>招聘分析</span>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="data">
+            <div class="project-index">02</div>
+            <p class="card-label">Public Opinion Intelligence</p>
+            <h3>台风摩羯社交媒体情报分析</h3>
+            <p>
+              采集 609 条多平台数据，结合 58,322 条文本情感分析、TF-IDF 关键词提取和 Tableau 可视化，
+              总结舆情峰值规律与情感波动特征，支撑应急决策。
+            </p>
+            <div class="tags">
+              <span>SnowNLP</span><span>TF-IDF</span><span>Tableau</span>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="data">
+            <div class="project-index">03</div>
+            <p class="card-label">Urban Governance Research</p>
+            <h3>新一线城市社区养老模式探索</h3>
+            <p>
+              带领团队完成武汉 9 个社区和 9 个公园实地调研，收集 2,500+ 份问卷及 4 万余字日志，
+              提出“五共促五有”理念与智慧养老、时间银行模式。
+            </p>
+            <div class="tags">
+              <span>统计分析</span><span>问卷研究</span><span>治理创新</span>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="system">
+            <div class="project-index">04</div>
+            <p class="card-label">Information System</p>
+            <h3>南湖易餐</h3>
+            <p>
+              面向校园食堂拥挤痛点，开发微信小程序用户端与 Web 管理端，覆盖订单管理、菜品管理、
+              数据统计等核心模块，并参与需求分析、功能实现与测试。
+            </p>
+            <div class="tags">
+              <span>Java</span><span>Python</span><span>MySQL</span><span>UML</span>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="ai system">
+            <div class="project-index">05</div>
+            <p class="card-label">Open Source</p>
+            <h3>衣搭记 fit_check</h3>
+            <p>
+              AI 穿搭推荐与穿搭记录工具，聚焦用户自有衣物管理，探索生活场景中的轻量 AI 产品体验。
+            </p>
+            <div class="tags">
+              <span>AI 推荐</span><span>产品设计</span><span>生活应用</span>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="system data">
+            <div class="project-index">06</div>
+            <p class="card-label">Open Source</p>
+            <h3>健食计 calorie_calculate</h3>
+            <p>
+              面向健身人群的热量追踪与饮食管理平台，支持能量消耗计算、营养分析和结构化记录。
+            </p>
+            <div class="tags">
+              <span>数据计算</span><span>营养分析</span><span>Web App</span>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="system">
+            <div class="project-index">07</div>
+            <p class="card-label">Learning Tool</p>
+            <h3>汉字笔画大师 hanzi-stroke-master</h3>
+            <p>
+              生成田字格汉字笔顺练习纸，具备笔画编号与文档导出功能，将传统练习材料转化为可生成工具。
+            </p>
+            <div class="tags">
+              <span>文档生成</span><span>教育工具</span><span>自动化</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band skills-band" id="skills">
+        <div class="wrap">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Skills</p>
+            <h2>技术栈与能力地图</h2>
+            <p>围绕数据开发、湖仓架构、SQL 优化、业务建模和 AI 数据应用形成完整能力闭环。</p>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <h3>数据开发</h3>
+              <p>Python、PySpark、Pandas、多线程开发、代码重构、批处理逻辑设计。</p>
+            </article>
+            <article class="skill-card reveal">
+              <h3>大数据与调度</h3>
+              <p>Spark、Airflow、Doris、Iceberg、湖仓一体、ETL 全流程、DAG 编排。</p>
+            </article>
+            <article class="skill-card reveal">
+              <h3>SQL 与建模</h3>
+              <p>复杂查询、多表关联、执行计划分析、ODS/DWD/DWS/ADS 分层建模。</p>
+            </article>
+            <article class="skill-card reveal">
+              <h3>分析与可视化</h3>
+              <p>数据清洗、统计分析、SnowNLP、TF-IDF、Tableau、指标口径设计。</p>
+            </article>
+            <article class="skill-card reveal">
+              <h3>系统开发</h3>
+              <p>Java、MySQL、UML 建模、小程序用户端、Web 管理端、接口平台。</p>
+            </article>
+            <article class="skill-card reveal">
+              <h3>业务落地</h3>
+              <p>需求拆解、跨角色沟通、数据报表交付、功能模块实现、业务数据质量提升。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap timeline-section" id="timeline">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Timeline</p>
+          <h2>成长轨迹</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <time>2022.09 - 2026.06</time>
+            <h3>华中师范大学｜信息管理与信息系统</h3>
+            <p>系统学习数据分析、信息系统开发、数据挖掘、自然语言处理、数据库和信息安全等课程。</p>
+          </article>
+          <article class="timeline-item reveal">
+            <time>2023.09 - 2024.12</time>
+            <h3>多源数据研究与学生工作</h3>
+            <p>带队开展社区养老模式研究，同时担任融媒体文字组负责人和学生会活动部副部长。</p>
+          </article>
+          <article class="timeline-item reveal">
+            <time>2024.12 - 2025.04</time>
+            <h3>AI 人才培养路径优化方案</h3>
+            <p>围绕 AI 企业需求、高校课程与个人技能成长构建知识图谱和培养建议。</p>
+          </article>
+          <article class="timeline-item reveal">
+            <time>2025.10 - 2026.01</time>
+            <h3>华大博思（武汉）｜数据开发实习</h3>
+            <p>参与数据中台建设，交付 SQL 优化、DAG 迁移、ETL 脚本与业务接口能力。</p>
+          </article>
+          <article class="timeline-item reveal">
+            <time>2026.09</time>
+            <h3>华中科技大学｜图书情报硕士</h3>
+            <p>以推免生身份入学，继续深化数据、信息组织、AI 应用和知识服务方向。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band">
+        <div class="wrap achievements">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Awards & Certificates</p>
+            <h2>荣誉与证书</h2>
+          </div>
+          <div class="badge-grid reveal">
+            <span>挑战杯校三等奖</span>
+            <span>三创赛商务大数据分析赛道校二等奖</span>
+            <span>校三好学生</span>
+            <span>树人单项奖学金</span>
+            <span>CET-4 / CET-6</span>
+            <span>计算机三级数据库技术</span>
+            <span>HCCDA-AI</span>
+            <span>Swift 应用开发者证书</span>
+            <span>高中数学教师资格证</span>
+            <span>普通话二级甲等</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact wrap reveal" id="contact">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>期待把数据能力放进真实场景里。</h2>
+          <p>
+            如果你关注数据开发、AI 应用、信息系统或面向业务的数据产品，欢迎联系我。
+          </p>
+        </div>
+        <div class="contact-card">
+          <a href="mailto:15872272358@163.com">15872272358@163.com</a>
+          <a href="tel:+8615872272358">158 7227 2358</a>
+          <a href="https://github.com/ysdatasci" target="_blank" rel="noreferrer">github.com/ysdatasci</a>
+          <a href="./assets/huang-yansong-resume.pdf" download>下载个人履历 PDF</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 黄彦松</span>
+      <a href="#top">回到顶部</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
